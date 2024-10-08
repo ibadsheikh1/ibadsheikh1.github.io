@@ -96,3 +96,32 @@ figure {
     margin-top: 10px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4a4e69; 
+    color: #f4f4f9; 
+}
+
+tr:hover {
+    background-color: #9a8c98; 
+}
+
+td {
+    color: #333;
+}
+
