@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibad Sheikh Incredible Iguana || ITSC3135 Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Form</h2>
+        <main>
+            <form action="#" method="POST">
+              
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" placeholder="Ibad Sheikh" required><br>
+        
+              
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+        
+              
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="sheikh@uncc.edu" required><br>
+        
+              
+              <label for="adventure">Preferred Adventure Types:</label><br>
+              <input type="checkbox" id="camping" name="adventure" value="camping">
+              <label for="camping">Camping</label><br>
+              <input type="checkbox" id="hiking" name="adventure" value="hiking">
+              <label for="hiking">Hiking</label><br>
+              <input type="checkbox" id="kayaking" name="adventure" value="kayaking">
+              <label for="kayaking">Kayaking</label><br>
+        
+              
+              <label>Group Size:</label><br>
+              <input type="radio" id="solo" name="group_size" value="solo" required>
+              <label for="solo">Solo</label><br>
+              <input type="radio" id="small" name="group_size" value="small" required>
+              <label for="small">Small (2-4 people)</label><br>
+              <input type="radio" id="large" name="group_size" value="large" required>
+              <label for="large">Large (5+ people)</label><br>
+        
+              
+              <label for="package">Choose Your Package:</label>
+              <select id="package" name="package" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="basic">Basic Escape</option>
+                <option value="premium">Premium Adventure</option>
+                <option value="luxury">Luxury Expedition</option>
+              </select><br>
+        
+              
+              <button type="reset" class="form-btn">Reset</button>
+              <button type="submit" class="form-btn">Submit</button>
+            </form>
+          </main>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

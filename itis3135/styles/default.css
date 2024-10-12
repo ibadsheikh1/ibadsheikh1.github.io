@@ -125,3 +125,41 @@ td {
     color: #333;
 }
 
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f4f4f9; /* Matches your light lavender text */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-btn {
+    background-color: #22223b; /* Dark purple */
+    color: #f4f4f9; /* Light lavender text */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-btn:hover {
+    background-color: #4a4e69; /* Muted purple hover effect */
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #9a8c98; /* Muted purple for focus */
+    outline: none;
+}
+
