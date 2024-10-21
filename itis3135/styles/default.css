@@ -1,9 +1,5 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -21,10 +17,7 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2em;
-}
+
 
 nav a {
     color: #f4f4f9; /* Light lavender */
@@ -46,10 +39,7 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
-    margin-bottom: 15px;
-    color: #4a4e69; /* Muted purple for headings */
-}
+
 
 ul li {
     color: #6c757d; /* Soft gray for list items */
@@ -132,9 +122,7 @@ form {
 
 input[type="text"], input[type="tel"], input[type="email"], select {
     width: 100%;
-    padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: #f4f4f9; /* Matches your light lavender text */
@@ -163,3 +151,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
     outline: none;
 }
 
+h3 {
+    text-align: center;
+}
