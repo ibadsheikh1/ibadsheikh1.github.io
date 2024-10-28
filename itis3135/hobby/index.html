@@ -11,9 +11,12 @@
             color: #2E2E3A; /* Dark gray for readability */
             margin: 0;
         }
-        header, main, footer {
+        header, footer {
             padding: 20px;
             text-align: center;
+        }
+        main {
+            padding: 20px;
         }
         header {
             background-color: #003366; /* Dark muted blue */
@@ -40,10 +43,15 @@
         }
         h2 {
             color: #003366; /* Dark muted blue */
+            text-align: center;
         }
         figure {
             margin: 0 auto;
             width: 50%;
+            text-align: center;
+        }
+        figure img {
+            width: 50%; /* Adjust image size here */
         }
         table, th, td {
             border: 1px solid #2E2E3A; /* Dark gray */
@@ -92,12 +100,12 @@
 <main>
     <section id="what" class="active">
         <h2>What is Soccer?</h2>
-        <p>Two teams of eleven players each compete in the exciting and dynamic sport of soccer, which is also referred to as football in many areas of the world.. Soccer is the most popular sport in the world because it is easy to play and requires little equipment, making it suitable for players of all ages and skill levels. With a long history and a large international following, soccer unites people from every walk of life, transcending cultural and linguistic divides as it develops a love for the game.</p>
+        <p>Two teams of eleven players each compete in the exciting and dynamic sport of soccer, which is also referred to as football in many areas of the world. Soccer is the most popular sport in the world because it is easy to play and requires little equipment, making it suitable for players of all ages and skill levels. With a long history and a large international following, soccer unites people from every walk of life, transcending cultural and linguistic divides as it develops a love for the game.</p>
         <figure>
-            <img src="images/HighSchool.jpg" alt="Soccer Game" style="width:100%;">
+            <img src="images/HighSchool.jpg" alt="Soccer Game">
             <figcaption>HighSchool Soccer Game</figcaption>
         </figure>
-        <p><b>Below is list of Europe top 5 leagues</b></p>
+        <p><b>Below is a list of Europe top 5 leagues</b></p>
         <table>
             <tr>
                 <th>League</th>
@@ -116,7 +124,7 @@
                 <td>Germany</td>
             </tr>
             <tr>
-                <td>Seria A</td>
+                <td>Serie A</td>
                 <td>Italy</td>
             </tr>
             <tr>
@@ -130,12 +138,12 @@
         <h2>Who Plays Soccer?</h2>
         <p>People of various ages and skill levels play soccer. Professional players compete in major leagues like the English Premier League, La Liga, and Serie A, making it a popular sport among kids, teens, and adults. A lot of people play soccer as a hobby, participating in amateur leagues or picking up games at nearby parks. With only a ball and a playing area needed, the sport is accessible and inclusive. By connecting different people, it promotes collaboration, physical fitness, and a love of the game.</p>
         <figure>
-            <img src="players.jpg" alt="Soccer Players" style="width:100%;">
-            <figcaption>Players preparing for a match.</figcaption>
+            <img src="images/Barca.jpg" alt="Soccer Stadium" style="width:100%;">
+            <figcaption>My Favorite Club FC Barcelona</figcaption>
         </figure>
         <form>
-            <label for="favorite-player">Favorite Player:</label>
-            <input type="text" id="favorite-player" name="favorite-player"><br><br>
+            <label for="favorite-team">Your Favorite Team:</label>
+            <input type="text" id="favorite-team" name="favorite-team"><br><br>
             <input type="submit" value="Submit">
         </form>
     </section>
@@ -144,8 +152,8 @@
         <h2>When is Soccer Played?</h2>
         <p>Soccer is played year-round, with different leagues and tournaments held throughout the year.</p>
         <figure>
-            <img src="calendar.jpg" alt="Soccer Calendar" style="width:100%;">
-            <figcaption>A typical soccer calendar showing league schedules.</figcaption>
+            <img src="images/SoccerGame.jpg" alt="Soccer Calendar" style="width:100%;">
+            <figcaption>A soccer game during rain</figcaption>
         </figure>
         <p>The World Cup is held every four years, featuring the best national teams worldwide.</p>
     </section>
@@ -154,7 +162,7 @@
         <h2>Where is Soccer Played?</h2>
         <p>Soccer is played worldwide, in stadiums, parks, schools, and even on the streets.</p>
         <figure>
-            <img src="stadium.jpg" alt="Soccer Stadium" style="width:100%;">
+            <img src="images/SoccerStadium.jpg" alt="Soccer Stadium" style="width:100%;">
             <figcaption>Soccer stadium filled with fans.</figcaption>
         </figure>
         <p>Popular soccer countries include Brazil, England, Germany, and Spain.</p>
@@ -164,17 +172,17 @@
         <h2>How is Soccer Played?</h2>
         <p>The objective is to score by getting the ball into the opponent's goal. The team with the most goals wins the match.</p>
         <figure>
-            <img src="rules.jpg" alt="Soccer Rules" style="width:100%;">
+            <img src="images/Refree.jpg" alt="Soccer Rules" style="width:100%;">
             <figcaption>A guide to basic soccer rules.</figcaption>
         </figure>
-        <p>Soccer matches are typically 90 minutes long, divided into two halves.</p>
+        <p>Each team consist of 11 players each, Soccer matches are typically 90 minutes long, divided into two halves. Professional Soccer game typically conist of 3 main refrees two for offsides on each side and a main ref that stays in the middle with the play</p>
     </section>
 
     <section id="why">
         <h2>Why is Soccer Popular?</h2>
         <p>Soccer's popularity stems from its simplicity, accessibility, and the excitement it brings to fans worldwide.</p>
         <figure>
-            <img src="fans.jpg" alt="Soccer Fans" style="width:100%;">
+            <img src="images/fans.jpg" alt="Soccer Fans" style="width:100%;">
             <figcaption>Fans celebrating a victory.</figcaption>
         </figure>
         <p>It is a sport that brings people together, transcending cultural and language barriers.</p>
@@ -191,7 +199,11 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Soccer Enthusiasts. All rights reserved.</p>
+    <p>Page buily by <a href="sheikhenterprises.net/index.html"> Sheikh Enterprises </a>&copy; 2024</p>
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
 </footer>
 
 </body>
