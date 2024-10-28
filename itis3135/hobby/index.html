@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Hobby</title>
+    <style>
+        body {
+            background-color: #E3C6C6; /* Light reddish-pink */
+            font-family: Arial, sans-serif;
+            color: #2E2E3A; /* Dark gray for readability */
+            margin: 0;
+        }
+        header, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #003366; /* Dark muted blue */
+            color: #FBC02D; /* Gold */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #FBC02D; /* Gold */
+            text-decoration: none;
+            cursor: pointer;
+        }
+        section {
+            display: none;
+            margin-top: 20px;
+            background-color: #F3E5AB; /* Light gold */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            color: #003366; /* Dark muted blue */
+        }
+        figure {
+            margin: 0 auto;
+            width: 50%;
+        }
+        table, th, td {
+            border: 1px solid #2E2E3A; /* Dark gray */
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #FAF3DD; /* Very light yellow */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+        }
+        footer {
+            background-color: #003366; /* Dark muted blue */
+            color: #FBC02D; /* Gold */
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Soccer</h1>
+    <nav>
+        <a onclick="showSection('what')">What</a>
+        <a onclick="showSection('who')">Who</a>
+        <a onclick="showSection('when')">When</a>
+        <a onclick="showSection('where')">Where</a>
+        <a onclick="showSection('how')">How</a>
+        <a onclick="showSection('why')">Why</a>
+        <a onclick="showSection('ai-prompts')">AI Prompts</a>
+    </nav>
+</header>
+
+<main>
+    <section id="what" class="active">
+        <h2>What is Soccer?</h2>
+        <p>Two teams of eleven players each compete in the exciting and dynamic sport of soccer, which is also referred to as football in many areas of the world.. Soccer is the most popular sport in the world because it is easy to play and requires little equipment, making it suitable for players of all ages and skill levels. With a long history and a large international following, soccer unites people from every walk of life, transcending cultural and linguistic divides as it develops a love for the game.</p>
+        <figure>
+            <img src="images/HighSchool.jpg" alt="Soccer Game" style="width:100%;">
+            <figcaption>HighSchool Soccer Game</figcaption>
+        </figure>
+        <p><b>Below is list of Europe top 5 leagues</b></p>
+        <table>
+            <tr>
+                <th>League</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Premier League</td>
+                <td>England</td>
+            </tr>
+            <tr>
+                <td>LaLiga</td>
+                <td>Spain</td>
+            </tr>
+            <tr>
+                <td>Bundesliga</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Seria A</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>Ligue 1</td>
+                <td>France</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="who">
+        <h2>Who Plays Soccer?</h2>
+        <p>People of various ages and skill levels play soccer. Professional players compete in major leagues like the English Premier League, La Liga, and Serie A, making it a popular sport among kids, teens, and adults. A lot of people play soccer as a hobby, participating in amateur leagues or picking up games at nearby parks. With only a ball and a playing area needed, the sport is accessible and inclusive. By connecting different people, it promotes collaboration, physical fitness, and a love of the game.</p>
+        <figure>
+            <img src="players.jpg" alt="Soccer Players" style="width:100%;">
+            <figcaption>Players preparing for a match.</figcaption>
+        </figure>
+        <form>
+            <label for="favorite-player">Favorite Player:</label>
+            <input type="text" id="favorite-player" name="favorite-player"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="when">
+        <h2>When is Soccer Played?</h2>
+        <p>Soccer is played year-round, with different leagues and tournaments held throughout the year.</p>
+        <figure>
+            <img src="calendar.jpg" alt="Soccer Calendar" style="width:100%;">
+            <figcaption>A typical soccer calendar showing league schedules.</figcaption>
+        </figure>
+        <p>The World Cup is held every four years, featuring the best national teams worldwide.</p>
+    </section>
+
+    <section id="where">
+        <h2>Where is Soccer Played?</h2>
+        <p>Soccer is played worldwide, in stadiums, parks, schools, and even on the streets.</p>
+        <figure>
+            <img src="stadium.jpg" alt="Soccer Stadium" style="width:100%;">
+            <figcaption>Soccer stadium filled with fans.</figcaption>
+        </figure>
+        <p>Popular soccer countries include Brazil, England, Germany, and Spain.</p>
+    </section>
+
+    <section id="how">
+        <h2>How is Soccer Played?</h2>
+        <p>The objective is to score by getting the ball into the opponent's goal. The team with the most goals wins the match.</p>
+        <figure>
+            <img src="rules.jpg" alt="Soccer Rules" style="width:100%;">
+            <figcaption>A guide to basic soccer rules.</figcaption>
+        </figure>
+        <p>Soccer matches are typically 90 minutes long, divided into two halves.</p>
+    </section>
+
+    <section id="why">
+        <h2>Why is Soccer Popular?</h2>
+        <p>Soccer's popularity stems from its simplicity, accessibility, and the excitement it brings to fans worldwide.</p>
+        <figure>
+            <img src="fans.jpg" alt="Soccer Fans" style="width:100%;">
+            <figcaption>Fans celebrating a victory.</figcaption>
+        </figure>
+        <p>It is a sport that brings people together, transcending cultural and language barriers.</p>
+    </section>
+
+    <section id="ai-prompts">
+        <h2>AI Prompts Used for This Page</h2>
+        <p>The AI was used to generate the structure and style recommendations for this HTML file.</p>
+        <ul>
+            <li>HTML and CSS structure recommendations for creating a soccer-themed hobby page.</li>
+            <li>JavaScript function suggestions for hiding and displaying sections based on user clicks.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Soccer Enthusiasts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
