@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soccer Hobby</title>
+    <title>Soccer</title>
     <style>
         body {
             background-color: #E3C6C6; /* Light reddish-pink */
@@ -235,6 +235,12 @@
         </ul>
     </li>
     </ul>
+    <form action="#" method="post">
+        <label for="season">What's your favorite soccer season or tournament?</label><br>
+        <input type="text" id="season" name="season" placeholder="e.g., World Cup, Premier League"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
     </section>
 
     <section id="where">
@@ -254,7 +260,18 @@
             <img src="images/SoccerStadium.jpg" alt="Soccer Stadium" style="width:100%;">
             <figcaption>Soccer stadium filled with fans.</figcaption>
         </figure>
-        <p>Popular soccer countries include Brazil, England, Germany, and Spain.</p>
+        <form action="#" method="post">
+            <label for="play-location">Where do you prefer to play soccer?</label><br>
+            <select id="play-location" name="play-location">
+                <option value="stadium">Stadium</option>
+                <option value="park">Local Park or Field</option>
+                <option value="street">Street or Neighborhood</option>
+                <option value="school">School or University</option>
+                <option value="indoor">Indoor Arena</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <section id="how">
@@ -268,6 +285,10 @@
             
             <li><b>Winning:</b> The team with the highest score at the end of the match wins. If tied, certain competitions allow for extra time or penalty shootouts.</li>
         </ul>
+        <aside style="background-color: #f0f0f5; border-left: 4px solid #4a4e69; padding: 1em; margin: 1em 0;">
+            <h3>Did You Know?</h3>
+            <p>The first official soccer rules, known as the "Laws of the Game," were written in 1863 by The Football Association in England!</p>
+        </aside>
         <figure>
             <img src="images/Refree.jpg" alt="Soccer Rules" style="width:100%;">
             <figcaption>A refree during a game</figcaption>
@@ -312,7 +333,18 @@
             <img src="images/fans.jpg" alt="Soccer Fans" style="width:100%;">
             <figcaption>Fans celebrating a victory.</figcaption>
         </figure>
-        <p>It is a sport that brings people together, transcending cultural and language barriers.</p>
+        <form action="#" method="post" style="max-width:500px; margin:auto;">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+    
+            <label for="reason">Why do you think soccer is popular?</label><br>
+            <textarea id="reason" name="reason" rows="4" placeholder="Share your thoughts..." required></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <section id="ai-prompts">
