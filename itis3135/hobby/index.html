@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soccer</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         body {
             background-color: #E3C6C6; /* Light reddish-pink */
@@ -77,12 +78,12 @@
     </style>
     <script>
         function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+        section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
+    }
     </script>
 </head>
 <body>
@@ -190,7 +191,7 @@
             </li>
         </ul>
         <figure>
-            <img src="images/Barca.jpg" alt="Soccer Stadium" style="width:100%;">
+            <img src="images/Barca.jpg" alt="Soccer Stadium">
             <figcaption>My Favorite Club FC Barcelona</figcaption>
         </figure>
         <form action="#" method="post">
@@ -218,10 +219,10 @@
             </li>
         </ul>
         <figure>
-            <img src="images/SoccerGame.jpg" alt="Soccer Calendar" style="width:100%;">
+            <img src="images/SoccerGame.jpg" alt="Soccer Calendar">
             <figcaption>A soccer game during rain</figcaption>
         </figure>
-    </ul>
+
     <li><b>Friendly Matches and Pre-Season</b>
         <ul>
             <li>Friendly games allow teams to prepare and try new strategies before official seasons.</li>
@@ -234,7 +235,7 @@
             <li>Informal games are common in parks and community fields year-round.</li>
         </ul>
     </li>
-    </ul>
+
     <form action="#" method="post">
         <label for="season">What's your favorite soccer season or tournament?</label><br>
         <input type="text" id="season" name="season" placeholder="e.g., World Cup, Premier League"><br><br>
@@ -257,7 +258,7 @@
             <li><b>Indoor Arenas:</b> Futsal, a form of indoor soccer, is played on smaller, hard-surface courts, especially during winter or in urban areas.</li>
         </ul>
         <figure>
-            <img src="images/SoccerStadium.jpg" alt="Soccer Stadium" style="width:100%;">
+            <img src="images/SoccerStadium.jpg" alt="Soccer Stadium">
             <figcaption>Soccer stadium filled with fans.</figcaption>
         </figure>
         <form action="#" method="post">
@@ -290,7 +291,7 @@
             <p>The first official soccer rules, known as the "Laws of the Game," were written in 1863 by The Football Association in England!</p>
         </aside>
         <figure>
-            <img src="images/Refree.jpg" alt="Soccer Rules" style="width:100%;">
+            <img src="images/Refree.jpg" alt="Soccer Rules">
             <figcaption>A refree during a game</figcaption>
         </figure>
         <ul>
@@ -330,7 +331,7 @@
             </li>
         </ul>
         <figure>
-            <img src="images/fans.jpg" alt="Soccer Fans" style="width:100%;">
+            <img src="images/fans.jpg" alt="Soccer Fans">
             <figcaption>Fans celebrating a victory.</figcaption>
         </figure>
         <form action="#" method="post" style="max-width:500px; margin:auto;">
@@ -358,12 +359,18 @@
 </main>
 
 <footer>
-    <p>Page buily by <a href="sheikhenterprises.net/index.html"> Sheikh Enterprises </a>&copy; 2024</p>
+    <p>Page buily by <a href="/ibadsheikh1.github.io/itis3135/sheikhenterprises.net/index.html"> Sheikh Enterprises </a>&copy; 2024</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
 </footer>
-<script>
-    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
- </script>
- <script src="../scripts/HTMLInclude.min.js"></script>
+
 </body>
 </html>
