@@ -154,3 +154,40 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
 h3 {
     text-align: center;
 }
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+      font-size: 135%;
+    }
+    main {
+      width: 90%; 
+    }
+    th, td {
+      padding: 4px; 
+      max-height: 35px; 
+      font-size: 1.1rem; 
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 115%; 
+    }
+    main {
+      width: 100%;
+    }
+    header nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    body main figure img {
+      max-width: 100%; 
+      height: auto; 
+    }
+    th, td {
+      padding: 5px; 
+      max-height: 35px; 
+      font-size: 0.85rem; 
+      text-align: center;
+    }
+  }
+  
