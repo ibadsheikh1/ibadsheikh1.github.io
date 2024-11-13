@@ -15,31 +15,31 @@
     </header>
     <main>
         <h2>Firstscripts Page</h2>
-    <h3 id="dateDisplay"></h3>
+        <h3 id="dateDisplay"></h3>
+        
+        <form id="userForm">
+          <label for="userName">Enter your name:</label>
+          <input type="text" id="userName" required><br>
+          
+          <label for="userMood">How are you feeling?</label>
+          <input type="text" id="userMood" required><br>
+          
+          <button type="button" id="submitGreeting">Submit</button>
+        </form>
+        
+        <h3 id="greetingMessage"></h3>
     
-    <form id="userForm">
-      <label for="userName">Enter your name:</label>
-      <input type="text" id="userName" required><br>
-      
-      <label for="userMood">How are you feeling?</label>
-      <input type="text" id="userMood" required><br>
-      
-      <button type="button" onclick="displayGreeting()">Submit</button>
-    </form>
+        <label for="favoriteNumber">Enter your favorite number:</label>
+        <input type="number" id="favoriteNumber" min="0" max="10">
+        <button type="button" id="checkPolygon">Check Polygon</button>
+        
+        <button id="showAnimalFact">Show Animal Fact</button>
+        <button id="calculateRandom">Random Calculation</button>
+        <button id="generateMotto">Generate Motto</button>
+        <button id="displayInspiration">Display Inspiration</button>
+        <button id="showFavoriteSpot">Show Favorite Spot</button>
+      </main>
     
-    <h3 id="greetingMessage"></h3>
-
-    <label for="favoriteNumber">Enter your favorite number:</label>
-    <input type="number" id="favoriteNumber" min="0" max="10">
-    <button type="button" onclick="showPolygon()">Check Polygon</button>
-    
-    <button onclick="showAnimalFact()">Show Animal Fact</button>
-    <button onclick="calculateRandom()">Random Calculation</button>
-    <button onclick="generateCompanyMotto()">Generate Motto</button>
-    <button onclick="displayInspiration()">Display Inspiration</button>
-    <button onclick="showFavoriteSpot()">Show Favorite Spot</button>
-
-    </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>

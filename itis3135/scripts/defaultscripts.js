@@ -1,62 +1,52 @@
-alert("Hey, the script is running!");
-function displayDateTime() {
-    const now = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    const dateString = now.toLocaleDateString('en-US', options);
-    document.getElementById("dateDisplay").textContent = `Today is ${timeString} on ${dateString}`;
-}
-window.onload = displayDateTime; 
+document.addEventListener("DOMContentLoaded", function() {
+    const dateDisplay = document.getElementById("dateDisplay");
+    const today = new Date();
+    dateDisplay.textContent = `Today is ${today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} on ${today.toLocaleDateString([], { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}.`;
 
-function displayGreeting() {
-    const userName = document.getElementById("userName").value;
-    const userMood = document.getElementById("userMood").value;
-    const companyName = "Iguana Escapes";
-    document.getElementById("greetingMessage").textContent = 
-        `The ${companyName} welcomes you, ${userName}! We're glad you are doing ${userMood}!`;
-}
+    document.getElementById("submitGreeting").addEventListener("click", displayGreeting);
 
-function showPolygon() {
-    let number = Math.abs(parseFloat(document.getElementById("favoriteNumber").value));
-    number = Math.round(number);
-
-    const polygons = {
-        2: "Digon",
-        3: "Trigon (Triangle)",
-        4: "Tetragon (Quadrilateral)",
-        5: "Pentagon",
-        6: "Hexagon",
-        7: "Heptagon",
-        8: "Octagon",
-        9: "Nonagon",
-        10: "Decagon"
-    };
-
-    if (polygons[number]) {
-        alert(polygons[number]);
-    } else {
-        alert("Polygon with that number of sides does not exist in our list.");
+    function displayGreeting() {
+        const userName = document.getElementById("userName").value;
+        const userMood = document.getElementById("userMood").value;
+        const greetingMessage = document.getElementById("greetingMessage");
+        const companyName = "Iguana Escapes";
+        
+        greetingMessage.textContent = `The ${companyName} welcomes you, ${userName}! We're glad you are doing ${userMood}.`;
     }
-}
 
-function showAnimalFact() {
-    alert("Did you know? Iguanas can hold their breath for up to 30 minutes!");
-}
+    document.getElementById("checkPolygon").addEventListener("click", showPolygon);
 
-function calculateRandom() {
-    const num1 = Math.floor(Math.random() * 10);
-    const num2 = Math.floor(Math.random() * 10);
-    alert(`Random calculation: ${num1} + ${num2} = ${num1 + num2}`);
-}
+    function showPolygon() {
+        const favoriteNumber = Math.round(Math.abs(Number(document.getElementById("favoriteNumber").value)));
+        const polygons = ["monogon", "digon", "trigon", "tetragon", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon", "hendecagon"];
+        const polygonName = favoriteNumber >= 0 && favoriteNumber <= 10 ? polygons[favoriteNumber] : "unknown polygon";
+        alert(`The polygon with ${favoriteNumber} sides is called a ${polygonName}.`);
+    }
 
-function generateCompanyMotto() {
-    alert("Iguana Escapes: Adventure at every turn!");
-}
+    document.getElementById("showAnimalFact").addEventListener("click", showAnimalFact);
+    document.getElementById("calculateRandom").addEventListener("click", calculateRandom);
+    document.getElementById("generateMotto").addEventListener("click", generateCompanyMotto);
+    document.getElementById("displayInspiration").addEventListener("click", displayInspiration);
+    document.getElementById("showFavoriteSpot").addEventListener("click", showFavoriteSpot);
 
-function displayInspiration() {
-    alert("Believe in yourself as fiercely as an iguana basking in the sun.");
-}
+    function showAnimalFact() {
+        alert("Did you know? Iguanas can hold their breath for up to 30 minutes!");
+    }
 
-function showFavoriteSpot() {
-    alert("Favorite spot: The tranquil beaches of North Carolina.");
-}
+    function calculateRandom() {
+        const randomValue = Math.floor(Math.random() * 100) + 1;
+        alert(`Random fact: The iguana population has grown by ${randomValue}% in some regions!`);
+    }
+
+    function generateCompanyMotto() {
+        alert("Iguana Escapes: Where every journey is a green getaway!");
+    }
+
+    function displayInspiration() {
+        alert("Fun fact: Iguanas are symbols of patience and resilience. Be like an iguana today!");
+    }
+
+    function showFavoriteSpot() {
+        alert("One of our favorite spots is the Iguana Rock in Ecuador - a true escape into nature!");
+    }
+});
