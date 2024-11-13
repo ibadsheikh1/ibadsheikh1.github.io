@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibad Sheikh Incredible Iguana || ITSC3135</title>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js" defer></script> 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <script src="scripts/defaultscripts.js"></script>
+    
 </head>
 <body>
     <header>
@@ -16,7 +17,6 @@
         <h2>Firstscripts Page</h2>
     <h3 id="dateDisplay"></h3>
     
-    <!-- User Input Form -->
     <form id="userForm">
       <label for="userName">Enter your name:</label>
       <input type="text" id="userName" required><br>
@@ -27,15 +27,12 @@
       <button type="button" onclick="displayGreeting()">Submit</button>
     </form>
     
-    <!-- Display Greeting -->
     <h3 id="greetingMessage"></h3>
 
-    <!-- Favorite Number Input for Polygon -->
     <label for="favoriteNumber">Enter your favorite number:</label>
     <input type="number" id="favoriteNumber" min="0" max="10">
     <button type="button" onclick="showPolygon()">Check Polygon</button>
     
-    <!-- Company-related Function Buttons -->
     <button onclick="showAnimalFact()">Show Animal Fact</button>
     <button onclick="calculateRandom()">Random Calculation</button>
     <button onclick="generateCompanyMotto()">Generate Motto</button>
