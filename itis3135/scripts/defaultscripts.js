@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Display Date and Time
-    const dateDisplay = document.getElementById("dateDisplay");
+    const dateDisplay = document.getElementById("date-display");
     const today = new Date();
     dateDisplay.textContent = `Today is ${today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} on ${today.toLocaleDateString([], { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}.`;
 
@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Event Listeners
-    document.getElementById("submitGreeting").addEventListener("click", displayGreeting);
-    document.getElementById("checkPolygon").addEventListener("click", showPolygon);
-    document.getElementById("showAnimalFact").addEventListener("click", showAnimalFact);
-    document.getElementById("calculateRandom").addEventListener("click", calculateRandom);
-    document.getElementById("generateMotto").addEventListener("click", generateCompanyMotto);
-    document.getElementById("displayInspiration").addEventListener("click", displayInspiration);
-    document.getElementById("showFavoriteSpot").addEventListener("click", showFavoriteSpot);
+    document.getElementById("submit-greeting").addEventListener("click", displayGreeting);
+    document.getElementById("check-polygon").addEventListener("click", showPolygon);
+    document.getElementById("show-animal-fact").addEventListener("click", showAnimalFact);
+    document.getElementById("calculate-random").addEventListener("click", calculateRandom);
+    document.getElementById("generate-motto").addEventListener("click", generateCompanyMotto);
+    document.getElementById("display-inspiration").addEventListener("click", displayInspiration);
+    document.getElementById("show-favorite-spot").addEventListener("click", showFavoriteSpot);
 });

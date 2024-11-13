@@ -15,30 +15,34 @@
     </header>
     <main>
         <h2>Firstscripts Page</h2>
-        <h3 id="dateDisplay"></h3>
+        <h3 id="date-display"></h3>
         
-        <form id="userForm">
-          <label for="userName">Enter your name:</label>
-          <input type="text" id="userName" required><br>
+        <!-- User Input Form -->
+        <form id="user-form">
+          <label for="user-name">Enter your name:</label>
+          <input type="text" id="user-name" required><br>
           
-          <label for="userMood">How are you feeling?</label>
-          <input type="text" id="userMood" required><br>
+          <label for="user-mood">How are you feeling?</label>
+          <input type="text" id="user-mood" required><br>
           
-          <button type="button" id="submitGreeting">Submit</button>
+          <button type="button" id="submit-greeting">Submit</button>
         </form>
         
-        <h3 id="greetingMessage"></h3>
+        <!-- Display Greeting -->
+        <h3 id="greeting-message"></h3>
     
-        <label for="favoriteNumber">Enter your favorite number:</label>
-        <input type="number" id="favoriteNumber" min="0" max="10">
-        <button type="button" id="checkPolygon">Check Polygon</button>
+        <!-- Favorite Number Input for Polygon -->
+        <label for="favorite-number">Enter your favorite number:</label>
+        <input type="number" id="favorite-number" min="0" max="10">
+        <button type="button" id="check-polygon">Check Polygon</button>
         
-        <button id="showAnimalFact">Show Animal Fact</button>
-        <button id="calculateRandom">Random Calculation</button>
-        <button id="generateMotto">Generate Motto</button>
-        <button id="displayInspiration">Display Inspiration</button>
-        <button id="showFavoriteSpot">Show Favorite Spot</button>
-      </main>
+        <!-- Company-related Function Buttons -->
+        <button id="show-animal-fact">Show Animal Fact</button>
+        <button id="calculate-random">Random Calculation</button>
+        <button id="generate-motto">Generate Motto</button>
+        <button id="display-inspiration">Display Inspiration</button>
+        <button id="show-favorite-spot">Show Favorite Spot</button>
+      </main>    
     
     <footer>
         <div data-include="components/footer.html"></div>
