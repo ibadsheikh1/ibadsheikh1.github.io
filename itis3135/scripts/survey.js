@@ -17,14 +17,26 @@ function addCourse() {
     courseDiv.appendChild(deleteButton);
     container.appendChild(courseDiv);
 }
+
 function generateIntroPage() {
     const formData = new FormData(document.getElementById("introForm"));
     const introDiv = document.createElement("div");
 
+    const courses = Array.from(
+        document.querySelectorAll('input[name="course"]')
+    ).map((input) => `<li>${input.value}</li>`).join("");
+
+    const fileInput = document.querySelector('input[type="file"]');
+    let imageSrc = "";
+    if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        imageSrc = URL.createObjectURL(file);
+    }
+
     introDiv.innerHTML = `
     <h2>${formData.get("name")}'s Introduction</h2>
     <h3>${formData.get("mascot")} - My Mascot</h3>
-    <img src="" alt="Uploaded Image" id="uploadedImage">
+    <img src="${imageSrc}" alt="Uploaded Image" id="uploadedImage" style="max-width: 300px;">
     <p><strong>Image Caption:</strong> ${formData.get("imageCaption")}</p>
     <p><strong>Personal Background:</strong> ${formData.get("personalBackground")}</p>
     <p><strong>Professional Background:</strong> ${formData.get("professionalBackground")}</p>
@@ -41,13 +53,17 @@ function generateIntroPage() {
     document.querySelector("main").innerHTML = "";
     document.querySelector("main").appendChild(introDiv);
 }
+
 function addCourseButtonListener() {
     const addCourseButton = document.getElementById("addCourseButton");
     addCourseButton.addEventListener("click", addCourse);
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("introForm");
     const coursesContainer = document.getElementById("coursesContainer");
+
+    
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         if (!form.checkValidity()) {
@@ -57,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         generateIntroPage();
     });
 
+    
     form.addEventListener("reset", () => {
         coursesContainer.innerHTML = '<button type="button" id="addCourseButton">Add Course</button>';
         addCourseButtonListener();
@@ -65,4 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
     
     addCourseButtonListener();
 });
-
