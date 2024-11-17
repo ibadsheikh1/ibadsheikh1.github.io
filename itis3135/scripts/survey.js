@@ -41,6 +41,10 @@ function generateIntroPage() {
     document.querySelector("main").innerHTML = "";
     document.querySelector("main").appendChild(introDiv);
 }
+function addCourseButtonListener() {
+    const addCourseButton = document.getElementById("addCourseButton");
+    addCourseButton.addEventListener("click", addCourse);
+}
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("introForm");
     const coursesContainer = document.getElementById("coursesContainer");
@@ -61,10 +65,4 @@ document.addEventListener("DOMContentLoaded", () => {
     
     addCourseButtonListener();
 });
-
-
-function addCourseButtonListener() {
-    const addCourseButton = document.getElementById("addCourseButton");
-    addCourseButton.addEventListener("click", addCourse);
-}
 
