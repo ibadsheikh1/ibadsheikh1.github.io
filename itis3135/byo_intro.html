@@ -15,50 +15,43 @@
     <main>
         <h2>BYO Intro</h2>
         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-        <form id="introForm">
+        <form id="intro-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="Ibad" required><br><br>
+            <input type="text" id="name" name="name" required><br>
 
             <label for="mascot">Mascot:</label>
-            <input type="text" id="mascot" name="mascot" value="Iguana" required><br><br>
+            <input type="text" id="mascot" name="mascot" required><br>
 
             <label for="image">Image:</label>
-            <input type="file" id="image" name="image" accept=".png, .jpg" required><br><br>
+            <input type="file" id="image" name="image" accept=".jpg, .png" required><br>
 
-            <label for="imageCaption">Image Caption:</label>
-            <input type="text" id="imageCaption" name="imageCaption" required><br><br>
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" required><br>
 
-            <label for="personalBackground">Personal Background:</label>
-            <textarea id="personalBackground" name="personalBackground" required>I am a student at UNC Charlotte.</textarea><br><br>
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" name="personal-background" required></textarea><br>
 
-            <label for="professionalBackground">Professional Background:</label>
-            <textarea id="professionalBackground" name="professionalBackground" required>Studying Software Development.</textarea><br><br>
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" name="professional-background" required></textarea><br>
 
-            <label for="academicBackground">Academic Background:</label>
-            <textarea id="academicBackground" name="academicBackground" required>Majoring in IT.</textarea><br><br>
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" name="academic-background" required></textarea><br>
 
-            <label for="webBackground">Background in Web Development:</label>
-            <textarea id="webBackground" name="webBackground" required>I have built multiple web apps.</textarea><br><br>
+            <label for="web-background">Web Development Background:</label>
+            <textarea id="web-background" name="web-background" required></textarea><br>
 
             <label for="platform">Primary Computer Platform:</label>
-            <input type="text" id="platform" name="platform" value="Windows" required><br><br>
+            <input type="text" id="platform" name="platform" required><br>
 
-            <label>Courses Currently Taking:</label>
-            <div id="coursesContainer">
-                <button type="button" id="addCourseButton">Add Course</button>
-            </div>
-            <br><br>
+            <label for="funny-thing">Funny Thing:</label>
+            <input type="text" id="funny-thing" name="funny-thing"><br>
 
-            <label for="funnyThing">Funny Thing About Me:</label>
-            <input type="text" id="funnyThing" name="funnyThing"><br><br>
+            <label for="anything-else">Anything Else:</label>
+            <textarea id="anything-else" name="anything-else"></textarea><br>
 
-            <label for="anythingElse">Anything Else?</label>
-            <input type="text" id="anythingElse" name="anythingElse"><br><br>
-
-            <label>
-                <input type="checkbox" id="agreement" required>
-                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-            </label><br><br>
+            <div id="courses-container">
+                <button type="button" id="add-course-button">Add Course</button>
+            </div><br>
 
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
