@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibad Sheikh Incredible Iguana || ITSC3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/survey.js" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        <form id="introForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Ibad" required><br><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" value="Iguana" required><br><br>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept=".png, .jpg" required><br><br>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" name="imageCaption" required><br><br>
+
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" name="personalBackground" required>I am a student at UNC Charlotte.</textarea><br><br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" name="professionalBackground" required>Studying Software Development.</textarea><br><br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" name="academicBackground" required>Majoring in IT.</textarea><br><br>
+
+            <label for="webBackground">Background in Web Development:</label>
+            <textarea id="webBackground" name="webBackground" required>I have built multiple web apps.</textarea><br><br>
+
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" name="platform" value="Windows" required><br><br>
+
+            <label>Courses Currently Taking:</label>
+            <div id="coursesContainer">
+                <button type="button" onclick="addCourse()">Add Course</button>
+            </div><br><br>
+
+            <label for="funnyThing">Funny Thing About Me:</label>
+            <input type="text" id="funnyThing" name="funnyThing"><br><br>
+
+            <label for="anythingElse">Anything Else?</label>
+            <input type="text" id="anythingElse" name="anythingElse"><br><br>
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
