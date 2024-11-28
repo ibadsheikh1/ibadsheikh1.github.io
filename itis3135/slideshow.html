@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibad Sheikh Incredible Iguana || ITSC3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>SlideShow</h2>
+        <div id="image-nav">
+            <a href="#" data-index="0">I</a>
+            <a href="#" data-index="1">B</a>
+            <a href="#" data-index="2">A</a>
+            <a href="#" data-index="3">D</a>
+            <a href="#" data-index="4">S</a>
+            <a href="#" data-index="5">H</a>
+            <a href="#" data-index="6">E</a>
+            <a href="#" data-index="7">I</a>
+            <a href="#" data-index="8">K</a>
+            <a href="#" data-index="9">H</a>
+        </div>
+    
+        <div class="slide" id="slide-container">
+            <img src="images/ice.jpg" alt="I - for Ice" id="slide-img">
+            <div class="caption" id="caption"></div>
+            <div class="ai-caption" id="ai-caption"></div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
